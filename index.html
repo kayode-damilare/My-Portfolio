@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>DREDD | Front-End Developer</title>
+</head>
+<body class="min-h-screen bg-[#080B10]  ">
+
+  <div class="fixed inset-0 -z-10 opacity-40 bg-[url('https://res.cloudinary.com/vyomyquu/image/upload/v1794308471/DREDD_Logo_2_dugmwh.png')] bg-no-repeat bg-[right_center] bg-[length:55%_auto]">
+
+  </div>
+
+  <!-- SCROLL TO TOP BUTTON -->
+    <a href="#home" class="fixed right-6 bottom-6 z-50">
+      <i title="Scroll to the top" class="fa-regular fa-circle-up  text-[#FF9D24] text-3xl hover:text-white"></i>
+    </a>
+  <!-- HEADER -->
+  <header class="px-10 py-4 bg-black text-white font-semibold">
+    <div class="flex justify-between">
+
+      <!-- LOGO -->
+      <div>
+        <h3>
+          DREDD
+        </h3>
+      </div>
+
+      <!-- NAV LINKS -->
+      <div>
+        <ul class="uppercase flex gap-8 ">
+          <li class="group flex flex-col gap-2">
+            <a href="#home" class="group-hover:text-[#FF9D24] transition-colors duration-300">
+              Home
+            </a>
+            <span class="w-full h-0.5 bg-white group-hover:bg-[#FF9D24] rounded-full"></span>
+          </li>
+          
+          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="#about">
+              about
+            </a>
+          </li>
+
+          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+           <a href="#skills">
+            skills
+           </a> 
+          </li>
+
+          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="#projects">
+              project
+            </a>
+          </li>
+
+          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="">
+              experience
+            </a>
+          </li>
+
+          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="">
+              contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RESUME -->
+       <div>
+        <a href="" class="uppercase bg-[#FF9D24] text-black px-5 py-1 rounded-xl">
+          resume
+          <i class="fa-solid fa-download"></i>
+        </a>
+        
+       </div>
+    </div>
+  </header>
+
+  <!-- CONTENT  -->
+  <main class="p-10 ">
+    
+    
+  <div class="">
+
+    <!--HOME-->
+    <section id="home" class="w-min">
+      <div class="flex flex-col gap-5 leading-tight">
+        <p class="text-[#FF9D24] uppercase text-3xl font-bold">
+          hello, i'm dredd
+        </p>
+        <h1 class="text-white text-8xl font-bold">
+          Front-End <span class="text-[#FF9D24]">Developer</span>
+        </h1>
+        <p class="text-white text-xl">
+          I build modern, responsive and user-friendly  web experience that solves real problems
+        </p>
+      </div>
+
+      <div class="mt-8 flex gap-8">
+        <a href="" class="bg-[#FF9D24] font-semibold px-6 py-1 rounded-xl">
+          View Projects
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="" class="text-white border font-semibold px-6 py-1 rounded-xl">
+          Download CV 
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+
+      <div class="text-white mt-8 flex gap-8">
+        <a href="" class="w-12 h-12 border flex justify-center items-center rounded-full">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="" class="w-12 h-12 border flex justify-center items-center rounded-full">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="" class="w-12 h-12 border flex justify-center items-center rounded-full">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+
+        <a href=""></a>
+      </div>
+      
+
+    </section>
+
+    <!-- ABOUT  -->
+    <section class="mt-18 bg-black p-10">
+       <div id="about" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <!-- Left: Image -->
+            <div class="flex justify-center">
+                <img 
+                    src="your-image.jpg" 
+                    alt="Kayode Damilare"
+                    class="w-72 h-80 object-cover rounded-2xl border border-[#FF9D24]/30"
+                >
+            </div>
+
+            <!-- Right: Text -->
+            <div class="space-y-6">
+
+                <h3 class="text-2xl font-semibold">
+                    I'm Kayode Damilare Samuel
+                </h3>
+
+                <p class="text-[#FF9D24] font-medium">
+                    Frontend Developer
+                </p>
+
+                <p class="text-gray-400 leading-7">
+                    I'm a Frontend Developer passionate about building
+                    responsive, user-friendly, and visually engaging web
+                    experiences.
+                </p>
+
+                <p class="text-gray-400 leading-7">
+                    My journey into web development has been driven by
+                    curiosity and a desire to understand how websites work.
+                    I enjoy turning ideas and designs into functional
+                    interfaces using HTML, CSS, JavaScript, and Tailwind CSS.
+                </p>
+
+                <p class="text-gray-400 leading-7">
+                    I'm continuously improving my skills through hands-on
+                    projects, exploring new approaches to frontend
+                    development, and challenging myself to write cleaner,
+                    more efficient code.
+                </p>
+
+                <!-- Download CV -->
+                <a href="resume.pdf" download
+                    class="inline-block bg-[#FF9D24] text-black font-semibold px-6 py-3 rounded-lg hover:bg-[#e88a15] transition">
+                    Download CV
+                    <i class="fa-solid fa-download ml-2"></i>
+                </a>
+
+            </div>
+    </section>
+
+    <!-- SKILLS  -->
+     <section id="skills" class="mt-18">
+      <div>
+        <p class="uppercase text-2xl font-medium text-[#FF9D24]">
+          my skills
+        </p>
+
+        <h3 class="text-4xl text-white font-medium">
+          Technologies I Work With
+        </h3>
+
+        <p class="text-xl text-gray-400 w-lg">
+          A selection of tools and technologies i use to design, build and deploy web applications.
+        </p>
+      </div>
+
+      <div class="p-10 grid grid-cols-6 mt-6">
+        <div class="flex flex-col items-center w-fit border-1 border-[#FF9D24] rounded-xl p-4 bg-black">
+          <i class="fa-brands fa-html5 text-[#FF9D24] text-4xl"></i>
+          <p class="text-white">HTML5</p>
+        </div>
+
+        <div class="flex flex-col items-center w-fit border-1 border-[#FF9D24] rounded-xl p-4">
+          <i class="fa-brands fa-css3-alt text-[#FF9D24] text-4xl"></i>
+          <p class="text-white">CSS</p>
+        </div>
+
+        <div class="flex flex-col items-center w-fit border-1 border-[#FF9D24] rounded-xl p-4 bg-black">
+          <i class="fa-brands fa-tailwind-css text-[#FF9D24] text-4xl"></i>
+          <p class="text-white">Tailwind CSS</p>
+        </div>
+
+        <div class="flex flex-col items-center w-fit border-1 border-[#FF9D24] rounded-xl p-4 bg-black">
+          <i class="fa-brands fa-js text-[#FF9D24] text-4xl"></i>
+          <p class="text-white">JavaScript</p>
+        </div>
+
+        <div class="flex flex-col items-center w-fit border-1 border-[#FF9D24] rounded-xl p-4 bg-black">
+          <i class="fa-brands fa-github text-[#FF9D24] text-4xl"></i>
+          <p class="text-white">GitHub</p>
+        </div>
+
+        <div class="flex flex-col items-center w-fit border-1 border-[#FF9D24] rounded-xl p-4 bg-black">
+          <i class="fa-brands fa-figma text-[#FF9D24] text-4xl"></i>
+          <p class="text-white">Figma</p>
+        </div>
+      </div>
+     </section>
+
+     <!-- PROJECTS  -->
+     <section id="projects" class="mt-18">
+      <div>
+        <p class="uppercase text-[#FF9D24] text-right font-medium text-2xl ">
+          my works
+        </p>
+
+        <h3 class="text-white text-4xl font-medium text-right">
+          Featured Projects
+        </h3>
+
+        <p class="text-gray-400 text-xl text-right">
+          A collection of projects that showcase my skills
+        </p>
+      </div>
+      <div class="grid grid-cols-4 gap-6">
+
+        <!-- NEON CORE -->
+        <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black">
+          <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1794419441/Screenshot_2026-11-11_185031_amcuuy.png" alt="" class="rounded-2xl">
+
+          <h3 class="text-[#FF9D24] font-bold tracking-tighter">
+            NEON CORE Log in
+          </h3>
+
+          <p class="text-gray-400 font-medium tracking-tight">
+            A log in page that is responsive and has a very active form validation
+          </p>
+
+          <div class="flex justify-evenly">
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              HTML
+            </span>
+              
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              CSS
+            </span>
+
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              JS
+            </span>
+          </div>
+
+          <!-- NEON LINKS -->
+        <div class="flex justify-evenly ">
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            
+            <span class="font-medium">
+              LIVE LINK
+            </span>
+            
+           </div>
+
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <span class="font-medium ">
+              GIT HUB
+            </span>
+            
+           </div>
+           </div>
+        </div>
+
+        <!-- ART OF WAR 3 -->
+         <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black ">
+          <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1794504506/Screenshot_2026-11-12_182659_uknapt.png" alt="" class="rounded-2xl">
+
+          <h3 class="text-[#FF9D24] font-bold tracking-tighter">
+            ART OF WAR 3 DATABASE
+          </h3>
+
+          <p class="text-gray-400 font-medium tracking-tight">
+            A website created to give AOW3 players access to more information about the game
+          </p>
+
+          <div class="flex justify-evenly">
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              HTML
+            </span>
+              
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              CSS
+            </span>
+
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              JS
+            </span>
+          </div>
+
+          <!-- AOW LINKS -->
+        <div class="flex justify-evenly ">
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            
+            <span class="font-medium">
+              LIVE LINK
+            </span>
+            
+           </div>
+
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <span class="font-medium ">
+              GIT HUB
+            </span>
+            
+           </div>
+           </div>
+        </div>
+
+        <!-- GYM LANDING -->
+         <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black ">
+          <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1794504506/Screenshot_2026-11-12_182437_nmwmch.png" alt="" class="rounded-2xl">
+
+          <h3 class="text-[#FF9D24] font-bold tracking-tighter">
+            GYM LANDING PAGE
+          </h3>
+
+          <p class="text-gray-400 font-medium tracking-tight">
+            A demo landing page for a gym
+          </p>
+
+          <div class="flex justify-evenly">
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              HTML
+            </span>
+              
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              CSS
+            </span>
+
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              JS
+            </span>
+          </div>
+
+          <!-- GYM LINKS -->
+        <div class="flex justify-evenly ">
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            
+            <span class="font-medium">
+              LIVE LINK
+            </span>
+            
+           </div>
+
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <span class="font-medium ">
+              GIT HUB
+            </span>
+            
+           </div>
+           </div>
+        </div>
+
+        <!-- RECYCLE CONNECT -->
+         <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black ">
+          <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1794504506/Screenshot_2026-11-12_182249_xhefos.png" alt="" class="rounded-2xl">
+
+          <h3 class="text-[#FF9D24] font-bold tracking-tighter">
+            RECYCLE CONNECT
+          </h3>
+
+          <p class="text-gray-400 font-medium tracking-tight">
+            A demo website where households can get to request collectors to collect their recycleable materials.
+          </p>
+
+          <div class="flex justify-evenly">
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              HTML
+            </span>
+              
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              CSS
+            </span>
+
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              JS
+            </span>
+          </div>
+
+          <!-- RECYCLE LINKS -->
+        <div class="flex justify-evenly ">
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            
+            <span class="font-medium">
+              LIVE LINK
+            </span>
+            
+           </div>
+
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <span class="font-medium ">
+              GIT HUB
+            </span>
+            
+           </div>
+           </div>
+        </div>
+
+        <!-- ARROWS DEN -->
+         <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black ">
+          <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1794504485/Screenshot_2026-11-12_142956_wew1pa.png" alt="" class="rounded-2xl">
+
+          <h3 class="text-[#FF9D24] font-bold tracking-tighter">
+            ARROWSDEN
+          </h3>
+
+          <p class="text-gray-400 font-medium tracking-tight">
+            A website for a shooting range where customers can get to have a view of what the brand is about and also book reservations.
+          </p>
+
+          <div class="flex justify-evenly">
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              HTML
+            </span>
+              
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              CSS
+            </span>
+
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              JS
+            </span>
+          </div>
+
+          <!-- ARROWSDEN LINKS -->
+        <div class="flex justify-evenly ">
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            
+            <span class="font-medium">
+              LIVE LINK
+            </span>
+            
+           </div>
+
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <span class="font-medium ">
+              GIT HUB
+            </span>
+            
+           </div>
+           </div>
+        </div>
+
+        <!-- ARTICLE  -->
+         <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black ">
+          <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1794504485/Screenshot_2026-11-12_144110_fto3ht.png" alt="" class="rounded-2xl">
+
+          <h3 class="text-[#FF9D24] font-bold tracking-tighter">
+            ARTICLE PAGE
+          </h3>
+
+          <p class="text-gray-400 font-medium tracking-tight">
+            A demo page to test out my article web page skill
+          </p>
+
+          <div class="flex justify-evenly">
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              HTML
+            </span>
+              
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              CSS
+            </span>
+          </div>
+
+          <!-- ARTICLE LINKS -->
+        <div class="flex justify-evenly ">
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            
+            <span class="font-medium">
+              LIVE LINK
+            </span>
+            
+           </div>
+
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <span class="font-medium ">
+              GIT HUB
+            </span>
+            
+           </div>
+           </div>
+        </div>
+
+        <!-- RATING -->
+         <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black ">
+          <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1794504485/Screenshot_2026-11-12_144027_dhy9on.png" alt="" class="rounded-2xl">
+
+          <h3 class="text-[#FF9D24] font-bold tracking-tighter">
+            RATINGS
+          </h3>
+
+          <p class="text-gray-400 font-medium tracking-tight">
+            A rating system
+          </p>
+
+          <div class="flex justify-evenly">
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              HTML
+            </span>
+              
+            <span class="text-[#FF9D24] font-medium">
+              <i class="fa-regular fa-circle-stop"></i> 
+              CSS
+            </span>
+          </div>
+
+          <!-- RATING LINKS -->
+        <div class="flex justify-evenly ">
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            
+            <span class="font-medium">
+              LIVE LINK
+            </span>
+            
+           </div>
+
+           <div class="flex flex-col items-center justify-center text-gray-400">
+            <a href="" class="w-8 h-8 border-1 rounded-full flex justify-center items-center">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <span class="font-medium ">
+              GIT HUB
+            </span>
+            
+           </div>
+           </div>
+        </div>
+      </div>
+      
+     </section>
+  </div>
+  </main>
+</body>
+</html>
