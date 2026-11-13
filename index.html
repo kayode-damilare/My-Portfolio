@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script defer src="script.js"></script>
   <title>DREDD | Front-End Developer</title>
 </head>
 <body class="min-h-screen bg-[#080B10]  ">
@@ -14,72 +15,82 @@
   </div>
 
   <!-- SCROLL TO TOP BUTTON -->
-    <a href="#home" class="fixed right-6 bottom-6 z-50">
+    <a href="#top" class="fixed right-6 bottom-6 z-50">
       <i title="Scroll to the top" class="fa-regular fa-circle-up  text-[#FF9D24] text-3xl hover:text-white hover:text-4xl animation-all duration-300 "></i>
     </a>
+
   <!-- HEADER -->
-  <header class="px-10 py-4 bg-black text-white font-semibold">
-    <div class="flex justify-between">
+  <header id="top" class="px-5 md:px-10 py-4 bg-black text-white font-semibold relative z-50">
 
-      <!-- LOGO -->
-      <div>
-        <h3>
-          DREDD
-        </h3>
-      </div>
+  <div class="flex justify-between items-center">
 
-      <!-- NAV LINKS -->
-      <div>
-        <ul class="uppercase flex gap-8 ">
+    <!-- LOGO -->
+    <div>
+      <h3>DREDD</h3>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menu-toggle" class="md:hidden text-xl relative z-50 ">
+      <i id="menu-icon" class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- NAV LINKS -->
+    <div id="mobile-menu"
+         class="hidden absolute top-full left-0 w-full bg-black px-5 pb-6
+                md:static md:block md:w-auto md:p-0">
+
+      <div class="flex flex-col gap-6 md:flex-row md:items-center">
+
+        <ul class="uppercase flex flex-col gap-5 md:flex-row md:gap-8">
+
           <li class="group flex flex-col gap-2">
             <a href="#home" class="group-hover:text-[#FF9D24] transition-colors duration-300">
               Home
             </a>
-            <span class="w-full h-0.5 bg-white group-hover:bg-[#FF9D24] rounded-full"></span>
-          </li>
-          
-          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
-            <a href="#about">
-              about
-            </a>
+            <span class="w-full h-0.5 bg-[#FF9D24] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
           </li>
 
-          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
-           <a href="#skills">
-            skills
-           </a> 
+          <li class="flex flex-col group hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="#about">About</a>
+            <span class="w-full h-0.5 bg-[#FF9D24] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
           </li>
 
-          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
-            <a href="#projects">
-              project
-            </a>
+          <li class="flex flex-col group hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="#skills">Skills</a>
+            <span class="w-full h-0.5 bg-[#FF9D24] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
           </li>
 
-          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
-            <a href="#experiences">
-              experience
-            </a>
+          <li class="flex flex-col group hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="#projects">Projects</a>
+            <span class="w-full h-0.5 bg-[#FF9D24] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
           </li>
 
-          <li class="hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
-            <a href="#contact">
-              contact
-            </a>
+          <li class="flex flex-col group hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="#experiences">Experience</a>
+            <span class="w-full h-0.5 bg-[#FF9D24] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
           </li>
+
+          <li class="flex flex-col group hover:text-[#FF9D24] transition-all duration-300 cursor-pointer">
+            <a href="#contact">Contact</a>
+            <span class="w-full h-0.5 bg-[#FF9D24] scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+          </li>
+
         </ul>
-      </div>
 
-      <!-- RESUME -->
-       <div>
-        <a href="" class="uppercase bg-[#FF9D24] text-black px-5 py-1 rounded-xl">
-          resume
-          <i class="fa-solid fa-download"></i>
-        </a>
-        
-       </div>
+        <!-- RESUME -->
+        <div>
+          <a href=".assets/Kayode_Damilare_Samuel_Resume.pdf"
+          download="Kayode_Damilare_Samuel_Resume.pdf" class="inline-block uppercase bg-[#FF9D24] text-black px-5 py-2 rounded-xl">
+            Resume
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+
+      </div>
     </div>
-  </header>
+
+  </div>
+</header>
 
   <!-- CONTENT  -->
   <main class="p-10 ">
@@ -102,7 +113,7 @@
       </div>
 
       <div class="mt-8 flex gap-8">
-        <a href="#projects" class="inline-flex items-center justify-center gap-2 bg-[#FF9D24] font-semibold px-6 py-1 rounded-xl">
+        <a href="#projects" class="flex items-center justify-center gap-2 bg-[#FF9D24] font-semibold px-6 py-1 rounded-xl">
             View Projects
           <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -189,20 +200,20 @@
     <!-- SKILLS  -->
      <section id="skills" class="mt-18">
       <div>
-        <p class="uppercase text-2xl font-medium text-[#FF9D24]">
+        <p class="uppercase text-base md:text-2xl lg:text-2xl font-medium text-[#FF9D24]">
           my skills
         </p>
 
-        <h3 class="text-4xl text-white font-medium">
+        <h3 class="text-2xl md:text-4xl lg:text-4xl text-white font-medium">
           Technologies I Work With
         </h3>
 
-        <p class="text-xl text-gray-400 w-lg">
+        <p class="text-base md:text-xl lg:text-xl text-gray-400 w-fit">
           A selection of tools and technologies i use to design, build and deploy web applications.
         </p>
       </div>
 
-      <div class="p-10 grid grid-cols-6 mt-6">
+      <div class="p-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-6">
         <div class="flex flex-col items-center w-fit border-1 border-[#FF9D24] rounded-xl p-4 bg-black">
           <i class="fa-brands fa-html5 text-[#FF9D24] text-4xl"></i>
           <p class="text-white">HTML5</p>
@@ -238,19 +249,19 @@
      <!-- PROJECTS  -->
      <section id="projects" class="mt-18">
       <div>
-        <p class="uppercase text-[#FF9D24] text-right font-medium text-2xl ">
+        <p class="uppercase text-[#FF9D24] text-right font-medium text-base md:text-2xl lg:text-2xl ">
           my works
         </p>
 
-        <h3 class="text-white text-4xl font-medium text-right">
+        <h3 class="text-white text-2xl md:text-4xl lg:text-4xl font-medium text-right">
           Featured Projects
         </h3>
 
-        <p class="text-gray-400 text-xl text-right">
+        <p class="text-gray-400 text-base md:text-xl lg:text-xl text-right">
           A collection of projects that showcase my skills
         </p>
       </div>
-      <div class="grid grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
         <!-- NEON CORE -->
         <div class="flex flex-col gap-2 border border-[#FF9D24] mt-8 p-3 rounded-lg hover:scale-105 animation-all duration-300 bg-black">
@@ -632,17 +643,17 @@
 
      <!-- EXPERIENCE -->
      <section id="experiences" class="mt-18 bg-black rounded-2xl">
-      <div class="flex flex-row-reverse gap-6 p-20">
-        <div class="mx-20 flex justify-center ">
-          <img src="" alt="" class="h-80 w-72 rounded-2xl object-cover border border-[#FF9D24]/30">
+      <div class="flex flex-row md:flex-row-reverse lg:flex-row-reverse gap-6 p-5 md:p-20 lg:p-20">
+        <div class="hidden lg:block lg:mx-20 flex justify-center ">
+          <img src="" alt="" class=" lg:h-80 lg:w-72 rounded-2xl object-cover border border-[#FF9D24]/30">
         </div>
 
         <div>
-          <h3 class="uppercase text-[#FF9D24] text-xl mb-10 font-medium">
+          <h3 class="uppercase text-[#FF9D24] text-base md:text-xl lg:text-xl mb-10 font-medium">
             my experiences
           </h3>
 
-          <div class="text-gray-400 space-y-6">
+          <div class="text-gray-400 space-y-3 md:space-y-5 lg:space-y-6">
             <p>
               Frontend Developer | Personal Projects
               2025 – Present
@@ -688,17 +699,17 @@
   <!-- FOOTER / CONTACT  -->
    <footer id="contact" class="bg-black p-10">
     <div class="space-y-3">
-      <p class="text-[#FF9D24] font-bold text-xl">
+      <p class="text-[#FF9D24] font-bold text-base md:text-xl lg:text-xl">
         CONTACT INFORMATION
       </p>
 
-      <p class="text-gray-400">
+      <p class="text-sm md:text-base lg:text-base text-gray-400">
         Tring to reach out to me? Kindly use any platform that works fine for you or your team!
       </p>
     </div>
 
-    <div class="flex gap-12 mt-8">
-      <a href="" class="text-[#e88a15] w-12 h-12 border flex justify-center items-center rounded-full hover:scale-105 hover:text-white duration-300 ">
+    <div class="flex gap-8 md:gap-12 lg:gap-12 mt-8">
+        <a href="" class="text-[#e88a15] w-8 h-8  md:w-12 h-12 w-12 h-12 border flex justify-center items-center rounded-full hover:scale-105 hover:text-white duration-300 ">
           <i class="fa-brands fa-github"></i>
         </a>
 
